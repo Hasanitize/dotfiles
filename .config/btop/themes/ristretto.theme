@@ -1,0 +1,31 @@
+# Ristretto Monokai Pro - High Contrast for btop
+# Optimized for DWM terminal readability with warm red/orange accents
+
+# Base
+theme[main_bg]="#2c2525"      # Main background
+theme[main_fg]="#fcfcfa"      # Primary text
+theme[frame]="#403e41"        # Box borders (muted)
+
+# Titles & Highlights
+theme[title]="#fc9867"        # Section titles (orange)
+theme[hi_fg]="#ff6188"        # Highlighted text (bright red-pink)
+theme[graph_text]="#c1c0c0"   # Graph axis/labels (muted grey)
+
+# CPU / Memory / Swap meters
+theme[meter_bg]="#221f22"     # Meter background
+theme[meter_fg]="#ff9867"     # Default meter (warm orange)
+theme[meter_hi_fg]="#ff6188"  # High-load meter (bright red)
+
+# CPU / Memory box borders (emphasized)
+theme[cpu_box]="#ff6188"      # CPU border (red)
+theme[mem_box]="#fc9867"      # Memory border (orange)
+theme[swap_box]="#ffd866"     # Swap border (yellow)
+
+# Network & Process list
+theme[net_box]="#ffd866"      # Network border (yellow)
+theme[proc_box]="#ab9df2"     # Process list border (purple)
+theme[proc_misc]="#a9dc76"    # Misc process info (green)
+
+# System info
+theme[uptime]="#a9dc76"       # Uptime (green)
+theme[load_avg]="#ffd866"     # Load average (yellow)

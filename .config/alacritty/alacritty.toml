@@ -1,0 +1,39 @@
+
+# Font configuration
+[font]
+size = 11.5 # Adjust as needed
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[general]
+# Import the Gruvbox Material Dark theme from the alacritty-theme repository.
+# You'll need to clone this repository first:
+# mkdir -p ~/.config/alacritty/themes
+# git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+import = [ "~/.config/alacritty/themes/ristretto.toml" ]
+
+[terminal]
+
+# Shell configuration to use Fish by default
+[terminal.shell]
+program = "/usr/bin/fish" # Ensure this path is correct for your system
+args = [
+    "--login",
+]
+
+[window]
+opacity = 0.5

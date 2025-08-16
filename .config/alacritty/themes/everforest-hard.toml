@@ -1,0 +1,32 @@
+
+[colors.primary]
+background = "#1E2326"   # bg0 dim — hard variant
+foreground = "#D3C6AA"   # fg
+
+[colors.normal]
+black   = "#7A8478"   # grey0
+red     = "#E67E80"   # red
+green   = "#83C092"   # aqua (used as lighter green)
+yellow  = "#DBBC7F"   # yellow
+blue    = "#7FBBB3"   # blue
+magenta = "#D699B6"   # purple
+cyan    = "#A7C080"   # green (everforest’s green is teal‑green, use aqua for cyan but here cyan slot = green)
+white   = "#9DA9A0"   # grey2 (bright white isn't ideal, so using grey2)
+
+[colors.bright]
+black   = "#859289"   # grey1
+red     = "#E69875"   # orange (bright_red slot)
+green   = "#A7C080"   # green (bright_green)
+yellow  = "#E3C277"   # slight medium—the theoryware uses DBBC7F; bright_yellow I’ll keep same as yellow
+blue    = "#7FBBB3"   # blue
+magenta = "#D699B6"   # purple
+cyan    = "#83C092"   # aqua
+white   = "#DBBC7F"   # yellow as bright white? But better is using foreground => "#D3C6AA"
+
+[colors.cursor]
+text = "#1E2326"     # bg0
+cursor = "#D3C6AA"   # fg
+
+[colors.selection]
+text = "#1E2326"        # bg0
+background = "#503946"  # bg_visual

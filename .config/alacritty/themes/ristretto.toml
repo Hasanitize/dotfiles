@@ -1,0 +1,32 @@
+
+[colors.primary]
+background = "#2c2525"   # Ristretto background
+foreground = "#fcfcfa"   # Ristretto foreground
+
+[colors.normal]
+black   = "#221f22"  # color0
+red     = "#ff6188"  # color1
+green   = "#a9dc76"  # color2
+yellow  = "#ffd866"  # color3
+blue    = "#fc9867"  # color4
+magenta = "#ab9df2"  # color5
+cyan    = "#78dce8"  # color6
+white   = "#c1c0c0"  # color7
+
+[colors.bright]
+black   = "#403e41"  # color8
+red     = "#ff6188"  # color9
+green   = "#a9dc76"  # color10
+yellow  = "#ffd866"  # color11
+blue    = "#fc9867"  # color12
+magenta = "#ab9df2"  # color13
+cyan    = "#78dce8"  # color14
+white   = "#fcfcfa"  # color15
+
+[colors.cursor]
+text = "#2c2525"     # background
+cursor = "#fcfcfa"   # foreground
+
+[colors.selection]
+text = "#2c2525"        # background
+background = "#403e41"  # slightly darker for selection

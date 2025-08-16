@@ -1,0 +1,45 @@
+# Gruvbox Material Dark theme for Alacritty
+# This file defines the colors used in the terminal.
+
+# Default colors
+[colors.primary]
+background = '#1d2021' # Base00 - Darkest background
+foreground = '#ddc7a1' # Base05 - Lighter foreground
+
+# Cursor colors
+[colors.cursor]
+text = '#1d2021' # Base00 - Cursor text color
+cursor = '#ddc7a1' # Base05 - Cursor color
+
+# VI Mode Cursor colors
+[colors.vi_mode_cursor]
+text = '#1d2021' # Base00 - VI mode cursor text color
+cursor = '#ddc7a1' # Base05 - VI mode cursor color
+
+# Selection colors
+[colors.selection]
+text = '#1d2021' # Base00 - Selected text color
+background = '#bdae93' # Base04 - Selection background color
+
+# Normal colors (ANSI colors 0-7)
+[colors.normal]
+black = '#32302f' # Base01
+red = '#ea6962' # Base08
+green = '#a9b665' # Base0B
+yellow = '#d8a657' # Base0A
+blue = '#7daea3' # Base0D
+magenta = '#d3869b' # Base0E
+cyan = '#89b482' # Base0C
+white = '#ebdbb2' # Base06
+
+# Bright colors (ANSI colors 8-15)
+[colors.bright]
+black = '#665c54' # Base03
+red = '#ea6962' # Bright Red (Same as normal red for this theme)
+green = '#a9b665' # Bright Green (Same as normal green for this theme)
+yellow = '#d8a657' # Bright Yellow (Same as normal yellow for this theme)
+blue = '#7daea3' # Bright Blue (Same as normal blue for this theme)
+magenta = '#d3869b' # Bright Magenta (Same as normal magenta for this theme)
+cyan = '#89b482' # Bright Cyan (Same as normal cyan for this theme)
+white = '#fbf1c7' # Base07
+

@@ -1,0 +1,11 @@
+#!/bin/dash
+
+# Catppuccin Mocha vibrant variant
+
+black=#181825   # base
+grey=#313244    # surface0
+white=#D9E0EE   # text
+green=#A6E3A1   # green
+red=#F38BA8     # red (slightly softer than your input, mocha red)
+blue=#F5C2E7    # pink (replacing blue)
+darkblue=#FAB387 # orange (replacing darkblue with a vibrant orange)

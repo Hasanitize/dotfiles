@@ -1,0 +1,13 @@
+
+* {
+    /* Monokai Pro Ristretto GTK Colors */
+    bg-col:        #2c2525;  /* Background */
+    bg-col-light:  #403e41;  /* Lighter surface */
+    border-col:    #fc9867;  /* Ristretto Orange (Accent Border) */
+    selected-col:  #403e41;  /* Highlighted selection background */
+    blue:          #78dce8;  /* Cyan/Blue Accent */
+    fg-col:        #fcfcfa;  /* Foreground text */
+    fg-col2:       #ff6188;  /* Accent red/pink */
+    grey:          #c1c0c0;  /* Muted text */
+    width:         600;
+}

@@ -1,0 +1,11 @@
+* {
+    bg-col:        #1a1b26;  /* Darker base */
+    bg-col-light:  #16161e;  /* Darkest surface */
+    border-col:    #7dcfff;  /* Brighter cyan to make border pop */
+    selected-col:  #283457;  /* Highlighted selection (cool tone) */
+    blue:          #7aa2f7;  /* Accent blue */
+    fg-col:        #c0caf5;  /* Foreground text */
+    fg-col2:       #f7768e;  /* Accent red */
+    grey:          #737aa2;  /* Subtext0 / muted text */
+    width:         600;
+}

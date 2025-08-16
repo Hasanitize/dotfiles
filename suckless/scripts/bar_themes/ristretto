@@ -1,0 +1,12 @@
+
+#!/bin/dash
+
+# colors (Ristretto - Monokai Pro)
+
+black=#19181a
+green=#a9dc76
+white=#fcfcfa
+grey=#221f22
+blue=#fc9867
+red=#ff6188
+darkblue=$blue
