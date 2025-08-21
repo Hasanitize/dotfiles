@@ -1,4 +1,5 @@
 require('config.options')
 require('config.keybinds')
 require('config.lazy')
+require("utils.colorscheme").load()
 vim.api.nvim_set_option("clipboard", "unnamedplus")

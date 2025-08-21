@@ -8,8 +8,7 @@
 
 ### EXPORT
 export TERM="xterm-256color"                      # getting proper colors
-export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
-export EDITOR="emacsclient -t -a ''"              # $EDITOR use Emacs in terminal
+export EDITOR="nvim"              # $EDITOR use Emacs in terminal
 export VISUAL="emacsclient -c -a emacs"           # $VISUAL use Emacs in GUI mode
 
 ### SET FZF DEFAULTS

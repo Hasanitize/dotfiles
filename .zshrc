@@ -1,10 +1,24 @@
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ENVIRONMENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+export JAVA_HOME=/usr/lib/jvm/java-24-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
 
+
+export EDITOR=nvim
+export VISUAL=nvim
+export PAGER=nvim
+
+# Add user bin directories
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
 
 export TERM="xterm-256color"
 export COLORTERM=truecolor
+
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PLUGINS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,9 +129,6 @@ alias .5='cd ../../../../..'
 
 # Editors
 alias vim='nvim'
-alias emacs="emacsclient -c -a 'emacs'"
-alias em='/usr/bin/emacs -nw'
-alias rem="killall emacs || echo 'Emacs server not running'; /usr/bin/emacs --daemon"
 
 
 # File listing (using eza)
@@ -194,9 +205,6 @@ alias bigfont="setfont ter-132b"
 alias regfont="setfont default8x16"
 
 
-# Dotfiles
-alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
-
 
 # Networking / Fun
 alias tb="nc termbin.com 9999"
@@ -209,7 +217,7 @@ alias mocp="bash -c mocp"
 
 # DWM
 alias cdwm="vim ~/suckless/dwm/config.h"
-alias mdwm=" ~/suckless/dwm; sudo make clean install; cd -"
+alias mdwm="cd ~/suckless/dwm; sudo make clean install; cd -"
 
 
 

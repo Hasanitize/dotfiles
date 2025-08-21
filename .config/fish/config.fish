@@ -20,6 +20,7 @@ set VISUAL "emacsclient -c -a emacs"              # $VISUAL use Emacs in GUI mod
 
 ### SET FZF DEFAULTS
 set FZF_DEFAULT_OPTS "--layout=reverse --exact --border=bold --border=rounded --margin=3% --color=dark"
+set -Ux FZF_COMPLETION_TRIGGER '**'
 
 ### SET MANPAGER
 ### Uncomment only one of these!
@@ -251,12 +252,50 @@ alias mdwm=" ~/suckless/dwm; sudo make clean install; cd -"
 #end
 
 ### SETTING THE STARSHIP PROMPT ###
-starship init fish | source
+# starship init fish | source
 
 ### FZF ###
 # Enables the following keybindings:
 # CTRL-t = fzf select
 # CTRL-r = fzf history
 # ALT-c  = fzf cd
-# fzf --fish | source
+ fzf --fish | source
 
+# ---- FZF Setup for Fish ----
+
+# # --- Catppuccin Mocha Colors ---
+# set -Ux FZF_DEFAULT_OPTS "
+#   --color=fg:#CDD6F4,bg:#1E1E2E,hl:#CBA6F7
+#   --color=fg+:#CDD6F4,bg+:#313244,hl+:#CBA6F7
+#   --color=info:#89B4FA,prompt:#94E2D5,pointer:#94E2D5
+#   --color=marker:#A6E3A1,spinner:#F9E2AF,header:#89B4FA
+# "
+#
+# # --- Use fd for better file finding ---
+# set -Ux FZF_DEFAULT_COMMAND "fd --hidden --strip-cwd-prefix --exclude .git"
+# set -Ux FZF_CTRL_T_COMMAND  $FZF_DEFAULT_COMMAND
+# set -Ux FZF_ALT_C_COMMAND   "fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+#
+# # --- Preview command (files vs directories) ---
+# set -l show_file_or_dir_preview "if test -d {}; eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; end"
+#
+# set -Ux FZF_CTRL_T_OPTS "--preview '$show_file_or_dir_preview'"
+# set -Ux FZF_ALT_C_OPTS  "--preview 'eza --tree --color=always {} | head -200'"
+#
+# # --- fzf completions (fish style) ---
+# function _fzf_comprun
+#     set command $argv[1]
+#     set -e argv[1]
+#
+#     switch $command
+#         case cd
+#             fzf --preview 'eza --tree --color=always {} | head -200' $argv
+#         case export unset
+#             fzf --preview "eval 'echo \${}'" $argv
+#         case ssh
+#             fzf --preview 'dig {}' $argv
+#         case '*'
+#             fzf --preview "$show_file_or_dir_preview" $argv
+#     end
+# end
+#

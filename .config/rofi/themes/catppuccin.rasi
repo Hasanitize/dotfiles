@@ -1,9 +1,9 @@
 * {
     bg-col:        #1e1e2e;  /* Base */
     bg-col-light:  #313244;  /* Surface0 */
-    border-col:    #45475a;  /* Surface1 */
+    border-col:    #f38ba8;  /* Surface1 */
     selected-col:  #585b70;  /* Surface2 */
-    blue:          #89b4fa;  /* Blue */
+    blue:          #f8bd96;  /* Blue */
     fg-col:        #cdd6f4;  /* Text */
     fg-col2:       #f38ba8;  /* Red */
     grey:          #6c7086;  /* Subtext0 */

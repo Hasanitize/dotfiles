@@ -24,7 +24,7 @@ style = "Bold Italic"
 # You'll need to clone this repository first:
 # mkdir -p ~/.config/alacritty/themes
 # git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
-import = [ "~/.config/alacritty/themes/ristretto.toml" ]
+import = [ "~/.config/alacritty/themes/gruvbox_material_dark.toml" ]
 
 [terminal]
 
@@ -36,4 +36,4 @@ args = [
 ]
 
 [window]
-opacity = 0.5
+opacity = 1.0 

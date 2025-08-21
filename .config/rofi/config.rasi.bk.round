@@ -7,7 +7,7 @@ configuration{
     show-icons: true;
     icon-theme: "Papirus-Dark";
     terminal: "st";
-    drun-display-format: "{icon}   {name}";
+    drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
@@ -25,26 +25,25 @@ window {
     height: 360px;
     border: 3px;
     border-color: @border-col;
-    background-color: rgba(30, 30, 46, 0.90);   /* transparency for blur */
+    background-color: @bg-col;
     border-radius: 15px;
 }
 
 mainbox {
     background-color: @bg-col;
     border-radius: 15px;
-    padding: 12px;
 }
 
 inputbar {
     children: [prompt,entry];
     background-color: @bg-col;
-    border-radius: 12px;
-    padding: 6px 12px;
+    border-radius: 10px;
+    padding: 2px;
 }
 
 prompt {
     background-color: @blue;
-    padding: 6px 10px;
+    padding: 6px;
     text-color: @bg-col;
     border-radius: 8px;
     margin: 20px 0px 0px 20px;
@@ -64,20 +63,19 @@ entry {
 }
 
 listview {
-    border: 0px;
-    padding: 12px;
-    margin: 15px 0px 0px 20px;
-    columns: 1;
-    spacing: 8px;
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 2;
     background-color: @bg-col;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 element {
-    padding: 10px;
+    padding: 5px;
+    border-radius: 8px;
     background-color: @bg-col;
-    text-color: @fg-col;
-    border-radius: 6px;
+    text-color: @fg-col  ;
 }
 
 element-icon {
@@ -85,14 +83,14 @@ element-icon {
 }
 
 element selected {
-    background-color: @bg-col;
-    text-color: @fg-col2;
-    border-radius: 6px;
+    background-color:  @selected-col ;
+    text-color: @fg-col2  ;
+    border-radius: 8px;
 }
 
 mode-switcher {
     spacing: 0;
-}
+  }
 
 button {
     padding: 10px;
@@ -104,7 +102,7 @@ button {
 }
 
 button selected {
-    background-color: @bg-col;
-    text-color: @blue;
+  background-color: @bg-col;
+  text-color: @blue;
     border-radius: 8px;
 }

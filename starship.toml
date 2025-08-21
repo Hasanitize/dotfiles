@@ -1,0 +1,178 @@
+# Catppuccin Mocha Archcraft-like Prompt - Corrected, Distinct Colors, Folder & Language Icons
+
+# Define the overall structure of the prompt
+# Each segment now gets a distinct color
+format = """\
+[ hasan@](bold #f9e2af)[Arch ](bold #f38ba8)\
+[at ](bold white)\
+[  ](bold #a6e3a1)\
+$directory\
+$git_branch\
+$git_setatus\
+$nodejs\
+$python\
+$rust\
+$golang\
+$java\
+$php\
+$ruby\
+$c\
+$zig\
+$status\
+$character"""
+
+# --- General Prompt Character (ends the prompt) ---
+[character]
+success_symbol = "[ ❯❯❯](bold #a6e3a1)" # Catppuccin Green
+error_symbol = "[ ❯❯❯](bold #f38ba8)"   # Catppuccin Red
+vicmd_symbol = "[ ❮❮❮](bold #f9e2af)"  # Catppuccin Yellow
+
+# --- Directory Module ---
+[directory]
+format = "[$read_only]($style)[ 󰉋 ]($style)[$path]($style)"
+style = "bold #f9e2af" # Catppuccin Yellow
+
+# --- Git Branch Module ---
+[git_branch]
+symbol = "󰊢 "
+style = "bold #cba6f7" # Catppuccin Mauve
+format = "[$symbol$branch]($style)[ ]($style)"
+
+# --- Git Status Module ---
+[git_status]
+format = "([$all_status$ahead_behind](bold #f9e2af))[ ]($style)"
+stashed = "󰏖"
+modified = "󰏫"
+staged = "󰱒"
+untracked = "󰋉"
+deleted = "🗑️"
+renamed = "󰑕"
+ahead = "󰅴${count}"
+behind = "󰅵${count}"
+diverged = "󰅴${ahead_count}󰅵${behind_count}"
+conflicted = "󰋪"
+style = "bold #f9e2af"
+
+# --- Command Status Module (Error Indicator) ---
+[status]
+symbol = " 󰅙 "
+# format = "[[ $symbol]] (bold #f38ba8)($style)"
+success_symbol = ""
+disabled = false
+
+# --- Programming Language Modules (Distinct Catppuccin Mocha Colors) ---
+
+[nodejs]
+symbol = "󰎘 "
+format = "[$symbol($version)](bold #a6e3a1)[ ]($style)" # Green
+detect_files = ["package.json", ".nvmrc", ".node-version"]
+detect_extensions = ["js", "mjs", "cjs"]
+disabled = false
+
+[python]
+symbol = "󰌠 "
+format = "[$symbol($virtualenv)](bold #94e2d5)[ ]($style)" # Teal
+detect_files = ["pyproject.toml", "requirements.txt", "Pipfile", "poetry.lock", "setup.py"]
+detect_extensions = ["py"]
+disabled = false
+
+[rust]
+symbol = "󰎈 "
+format = "[$symbol($version)](bold #f38ba8)[ ]($style)" # Red
+detect_files = ["Cargo.toml"]
+detect_extensions = ["rs"]
+disabled = false
+
+[golang]
+symbol = "󰟓 "
+format = "[$symbol($version)](bold #f9e2af)[ ]($style)" # Yellow
+detect_files = ["go.mod", "go.sum"]
+detect_extensions = ["go"]
+disabled = false
+
+[java]
+symbol = "󰅖 "
+format = "[$symbol($version)](bold #cba6f7)[ ]($style)" # Mauve
+detect_files = ["pom.xml", "build.gradle"]
+detect_extensions = ["java", "jar"]
+disabled = false
+
+[php]
+symbol = "󰌟 "
+format = "[$symbol($version)](bold #a6e3a1)[ ]($style)" # Green
+detect_files = ["composer.json", "artisan"]
+detect_extensions = ["php"]
+disabled = false
+
+[ruby]
+symbol = "󰇧 "
+format = "[$symbol($version)](bold #f5e0dc)[ ]($style)" # Rosewater
+detect_files = ["Gemfile", "Rakefile"]
+detect_extensions = ["rb"]
+disabled = false
+
+[c]
+symbol = "󰙰 "
+format = "[$symbol($version)](bold #f9e2af)[ ]($style)" # Yellow
+detect_files = ["Makefile", "CMakeLists.txt"]
+detect_extensions = ["c", "h", "cpp", "hpp"]
+disabled = false
+
+[zig]
+symbol = "⚡ "
+format = "[$symbol($version)](bold #94e2d5)[ ]($style)" # Teal
+detect_files = ["build.zig"]
+detect_extensions = ["zig"]
+disabled = false
+
+# --- Global Settings / Disabled Modules ---
+[line_break]
+disabled = true
+
+[battery]
+disabled = true
+[aws]
+disabled = true
+[kubernetes]
+disabled = true
+[time]
+disabled = true
+[conda]
+disabled = true
+[cmake]
+disabled = true
+[elixir]
+disabled = true
+[haskell]
+disabled = true
+[julia]
+disabled = true
+[lua]
+disabled = true
+[nim]
+disabled = true
+[ocaml]
+disabled = true
+[perl]
+disabled = true
+[purescript]
+disabled = true
+[scala]
+disabled = true
+[swift]
+disabled = true
+[terraform]
+disabled = true
+[vagrant]
+disabled = true
+[hg_branch]
+disabled = true
+[shell]
+disabled = true
+[shlvl]
+disabled = true
+[memory_usage]
+disabled = true
+[custom]
+disabled = true
+

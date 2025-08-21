@@ -1,2 +1,6 @@
 # Add files here I want stow to ignore
 
+\.git
+\.gitignore
+\.gitattributes
+\.gitmodules

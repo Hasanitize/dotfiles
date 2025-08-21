@@ -1,6 +1,16 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export FZF_ALT_C_COMMAND:fd\x20\x2d\x2dtype\x3dd\x20\x2d\x2dhidden\x20\x2d\x2dstrip\x2dcwd\x2dprefix\x20\x2d\x2dexclude\x20\x2egit
+SETUVAR --export FZF_ALT_C_OPTS:\x2d\x2dpreview\x20\x27eza\x20\x2d\x2dtree\x20\x2d\x2dcolor\x3dalways\x20\x7b\x7d\x20\x7c\x20head\x20\x2d200\x27
+SETUVAR --export FZF_COMPLETION_TRIGGER:\x2a\x2a
+SETUVAR --export FZF_CTRL_T_COMMAND:fd\x20\x2d\x2dhidden\x20\x2d\x2dstrip\x2dcwd\x2dprefix\x20\x2d\x2dexclude\x20\x2egit
+SETUVAR --export FZF_CTRL_T_OPTS:\x2d\x2dpreview\x20\x27if\x20test\x20\x2dd\x20\x7b\x7d\x3b\x20eza\x20\x2d\x2dtree\x20\x2d\x2dcolor\x3dalways\x20\x7b\x7d\x20\x7c\x20head\x20\x2d200\x3b\x20else\x20bat\x20\x2dn\x20\x2d\x2dcolor\x3dalways\x20\x2d\x2dline\x2drange\x20\x3a500\x20\x7b\x7d\x3b\x20end\x27
+SETUVAR --export FZF_DEFAULT_COMMAND:fd\x20\x2d\x2dhidden\x20\x2d\x2dstrip\x2dcwd\x2dprefix\x20\x2d\x2dexclude\x20\x2egit
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dlayout\x3dreverse\x20\x2d\x2dexact\x20\x2d\x2dborder\x3dbold\x20\x2d\x2dborder\x3drounded\x20\x2d\x2dmargin\x3d3\x25\x20\x2d\x2dcolor\x3ddark
 SETUVAR __fish_initialized:3800
+SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
+SETUVAR _fisher_plugins:patrickf1/fzf\x2efish
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:\x237d7d7d
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:brcyan

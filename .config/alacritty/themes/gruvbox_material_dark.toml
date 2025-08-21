@@ -1,45 +1,37 @@
-# Gruvbox Material Dark theme for Alacritty
-# This file defines the colors used in the terminal.
+# Gruvbox Material Dark (WittyJudge) for Alacritty
 
-# Default colors
 [colors.primary]
-background = '#1d2021' # Base00 - Darkest background
-foreground = '#ddc7a1' # Base05 - Lighter foreground
+background = "#282828" # bg0
+foreground = "#ddc7a1" # fg1
 
-# Cursor colors
 [colors.cursor]
-text = '#1d2021' # Base00 - Cursor text color
-cursor = '#ddc7a1' # Base05 - Cursor color
+text = "#282828"
+cursor = "#ddc7a1"
 
-# VI Mode Cursor colors
 [colors.vi_mode_cursor]
-text = '#1d2021' # Base00 - VI mode cursor text color
-cursor = '#ddc7a1' # Base05 - VI mode cursor color
+text = "#282828"
+cursor = "#ddc7a1"
 
-# Selection colors
 [colors.selection]
-text = '#1d2021' # Base00 - Selected text color
-background = '#bdae93' # Base04 - Selection background color
+text = "#282828"
+background = "#a89984" # grey2
 
-# Normal colors (ANSI colors 0-7)
 [colors.normal]
-black = '#32302f' # Base01
-red = '#ea6962' # Base08
-green = '#a9b665' # Base0B
-yellow = '#d8a657' # Base0A
-blue = '#7daea3' # Base0D
-magenta = '#d3869b' # Base0E
-cyan = '#89b482' # Base0C
-white = '#ebdbb2' # Base06
+black   = "#32302f" # bg1
+red     = "#ea6962" # red
+green   = "#a9b665" # green
+yellow  = "#d8a657" # yellow
+blue    = "#7daea3" # blue
+magenta = "#d3869b" # purple
+cyan    = "#89b482" # aqua
+white   = "#d4be98" # fg0
 
-# Bright colors (ANSI colors 8-15)
 [colors.bright]
-black = '#665c54' # Base03
-red = '#ea6962' # Bright Red (Same as normal red for this theme)
-green = '#a9b665' # Bright Green (Same as normal green for this theme)
-yellow = '#d8a657' # Bright Yellow (Same as normal yellow for this theme)
-blue = '#7daea3' # Bright Blue (Same as normal blue for this theme)
-magenta = '#d3869b' # Bright Magenta (Same as normal magenta for this theme)
-cyan = '#89b482' # Bright Cyan (Same as normal cyan for this theme)
-white = '#fbf1c7' # Base07
-
+black   = "#7c6f64" # grey0
+red     = "#ea6962" # red
+green   = "#a9b665" # green
+yellow  = "#d8a657" # yellow
+blue    = "#7daea3" # blue
+magenta = "#d3869b" # purple
+cyan    = "#89b482" # aqua
+white   = "#ddc7a1" # fg1
